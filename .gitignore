@@ -14,6 +14,8 @@ CMakeFiles/
 
 
 # Ignore files build by Visual Studio
+out-*
+obj-*
 #*.obj
 *.pdb
 *.aps

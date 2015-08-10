@@ -59,16 +59,20 @@
     <GenerateManifest>false</GenerateManifest>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
-    <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>obj-$(ProjectName)-$(Platform)-$(Configuration)\</IntDir>
+    <OutDir>$(ProjectDir)out-$(ProjectName)-$(Platform)-$(Configuration)\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
-    <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>obj-$(ProjectName)-$(Platform)-$(Configuration)\</IntDir>
+    <OutDir>$(ProjectDir)out-$(ProjectName)-$(Platform)-$(Configuration)\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>obj-$(ProjectName)-$(Platform)-$(Configuration)\</IntDir>
+    <OutDir>$(ProjectDir)out-$(ProjectName)-$(Platform)-$(Configuration)\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>obj-$(ProjectName)-$(Platform)-$(Configuration)\</IntDir>
+    <OutDir>$(ProjectDir)out-$(ProjectName)-$(Platform)-$(Configuration)\</OutDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
